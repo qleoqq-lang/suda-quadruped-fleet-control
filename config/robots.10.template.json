@@ -1,0 +1,132 @@
+{
+  "_说明": "安全模板：默认模拟模式。真机使用前必须替换每台狗的 IP、MAC、状态端口和 session_id，并逐台验证。",
+  "application": {
+    "name": "苏州大学新生开学典礼四足机器人表演集群控制平台"
+  },
+  "mode": "sim",
+  "robots": [
+    {
+      "id": "dog01",
+      "name": "机器狗 1",
+      "ip": "192.0.2.1",
+      "mac": "",
+      "state_port": 9901,
+      "session_id": 1
+    },
+    {
+      "id": "dog02",
+      "name": "机器狗 2",
+      "ip": "192.0.2.2",
+      "mac": "",
+      "state_port": 9902,
+      "session_id": 2
+    },
+    {
+      "id": "dog03",
+      "name": "机器狗 3",
+      "ip": "192.0.2.3",
+      "mac": "",
+      "state_port": 9903,
+      "session_id": 3
+    },
+    {
+      "id": "dog04",
+      "name": "机器狗 4",
+      "ip": "192.0.2.4",
+      "mac": "",
+      "state_port": 9904,
+      "session_id": 4
+    },
+    {
+      "id": "dog05",
+      "name": "机器狗 5",
+      "ip": "192.0.2.5",
+      "mac": "",
+      "state_port": 9905,
+      "session_id": 5
+    },
+    {
+      "id": "dog06",
+      "name": "机器狗 6",
+      "ip": "192.0.2.6",
+      "mac": "",
+      "state_port": 9906,
+      "session_id": 6
+    },
+    {
+      "id": "dog07",
+      "name": "机器狗 7",
+      "ip": "192.0.2.7",
+      "mac": "",
+      "state_port": 9907,
+      "session_id": 7
+    },
+    {
+      "id": "dog08",
+      "name": "机器狗 8",
+      "ip": "192.0.2.8",
+      "mac": "",
+      "state_port": 9908,
+      "session_id": 8
+    },
+    {
+      "id": "dog09",
+      "name": "机器狗 9",
+      "ip": "192.0.2.9",
+      "mac": "",
+      "state_port": 9909,
+      "session_id": 9
+    },
+    {
+      "id": "dog10",
+      "name": "机器狗 10",
+      "ip": "192.0.2.10",
+      "mac": "",
+      "state_port": 9910,
+      "session_id": 10
+    }
+  ],
+  "safety": {
+    "max_x": 0.3,
+    "max_y": 0.3,
+    "max_yaw": 0.5,
+    "min_lateral_actuation": 0.25,
+    "command_timeout_ms": 350,
+    "telemetry_timeout_ms": 1500,
+    "low_battery_percent": 20,
+    "critical_battery_percent": 10,
+    "warn_temperature_c": 65.0,
+    "stop_temperature_c": 75.0,
+    "max_roll_deg": 35.0,
+    "max_pitch_deg": 35.0,
+    "feedback_enabled": true,
+    "yaw_kp": 1.6,
+    "yaw_ki": 0.08,
+    "yaw_kd": 0.12,
+    "yaw_integral_limit": 0.4,
+    "yaw_derivative_alpha": 0.25,
+    "max_yaw_correction": 0.3,
+    "min_yaw_actuation": 0.22,
+    "feedback_deadband_rad": 0.02,
+    "lateral_kp": 2.4,
+    "lateral_ki": 0.35,
+    "lateral_kd": 0.28,
+    "lateral_integral_limit": 0.04,
+    "lateral_derivative_alpha": 0.3,
+    "lateral_deadband_m": 0.02,
+    "max_lateral_correction": 0.12,
+    "max_lateral_error_m": 0.12,
+    "lateral_uncertainty_limit_m": 0.08,
+    "lateral_slew_rate": 0.45,
+    "adaptive_slip_learning_rate": 0.4,
+    "adaptive_slip_filter_alpha": 0.25,
+    "adaptive_slip_deadband_m_s": 0.01,
+    "adaptive_slip_min_speed_m_s": 0.08,
+    "adaptive_slip_warmup_s": 0.35,
+    "adaptive_slip_hard_limit": 0.24,
+    "adaptive_slip_slew_rate": 0.35,
+    "one_shot_trigger_ms": 100,
+    "non_flip_action_seconds": 5.0,
+    "one_shot_return_ms": 3000
+  }
+}

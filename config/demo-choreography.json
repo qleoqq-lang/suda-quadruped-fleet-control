@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "steps": [
+    {
+      "kind": "posture",
+      "duration": 2,
+      "command": "stand",
+      "speed": 0.0,
+      "start_time": 0,
+      "targets": [
+        "dog01",
+        "dog02"
+      ],
+      "direction": "forward",
+      "target_x": 0.0,
+      "target_y": 0.0,
+      "target_name": "",
+      "return_to_start": false
+    },
+    {
+      "kind": "posture",
+      "duration": 2,
+      "command": "sit",
+      "speed": 0.0,
+      "start_time": 2,
+      "targets": [
+        "dog01"
+      ],
+      "direction": "forward",
+      "target_x": 0.0,
+      "target_y": 0.0,
+      "target_name": "",
+      "return_to_start": false
+    },
+    {
+      "kind": "posture",
+      "duration": 2,
+      "command": "sit",
+      "speed": 0.0,
+      "start_time": 3,
+      "targets": [
+        "dog02"
+      ],
+      "direction": "forward",
+      "target_x": 0.0,
+      "target_y": 0.0,
+      "target_name": "",
+      "return_to_start": false
+    }
+  ],
+  "music": "../assets/demo_choreography.wav"
+}
